@@ -1,0 +1,49 @@
+{
+  "name": "restaurant-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "api": "swaggie -s http://localhost:62834/swagger/v1/swagger.json -o ./src/api/base.ts && prettier ./src/api/base.ts --write",
+    "xd": "node -e 'require(\"swaggerek\").generate(\"http://localhost:62834/swagger/v1/swagger.json\")'",
+    "swaggerek": "node -e 'require(\"swaggerek\").generate(\"http://localhost:62834/swagger/v1/swagger.json\")'"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~8.2.14",
+    "@angular/common": "~8.2.14",
+    "@angular/compiler": "~8.2.14",
+    "@angular/core": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "ejs": "^3.0.1",
+    "openapi3-ts": "^1.3.0",
+    "prettier": "^1.19.1",
+    "rxjs": "~6.4.0",
+    "swaggerek": "0.0.10",
+    "swaggie": "^0.2.1",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.22",
+    "@angular/cli": "~8.3.22",
+    "@angular/compiler-cli": "~8.2.14",
+    "@angular/language-service": "~8.2.14",
+    "@types/node": "^8.9.5",
+    "codelyzer": "^5.0.0",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "tslint": "~5.15.0",
+    "typescript": "~3.5.3"
+  }
+}
